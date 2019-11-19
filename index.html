@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+	var loadFile = function(event) 
+	{
+	var output = document.getElementById('output');
+	output.src = URL.createObjectURL(event.target.files[0]);
+	document.getElementById("answer").innerHTML = "";
+	};
+</script>
+</head>
+<body>
+<p align="center">
+	<img name="imagefile" src="{{load_img}}" id="output" width=20% height=20% align="center">
+</p>
+<br>
+<br>
+<form align="center" name="myForm" action="/" method="post" enctype="multipart/form-data">
+	<p align="center">
+	Select image: <input type="file" name="load_img" accept="image/*"  onchange="loadFile(event)">
+	<br>
+	<br>
+	<input  type="submit" value="check">
+	</p>
+</form>
+{% if method=='POST' %}
+	<h1 id="answer" align="center"> {{ answer }} </h1>
+{% endif %}
+</body>
+</html>
+
