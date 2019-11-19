@@ -10,6 +10,7 @@ $ cd cats_and_dogs_recognition/
 $ FLASK_APP=cats_and_dogs.py flask run
 
 
+
 Then follow to this link in your browser.
 
 http://127.0.0.1:5000/
