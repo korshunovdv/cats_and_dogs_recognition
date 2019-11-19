@@ -10,7 +10,7 @@ cur_dir = os.getcwd()
 @app.route('/', methods=['POST', 'GET'])
 def index():
 	if request.method == 'POST':
-	try:
+		try:
 			img = request.files['load_img']
 			img_path = '/static/images/' + secure_filename(img.filename)
 			img.save(cur_dir+img_path)
