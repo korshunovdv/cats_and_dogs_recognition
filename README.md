@@ -14,3 +14,6 @@ $ FLASK_APP=cats_and_dogs.py flask run
 Then follow to this link in your browser.
 
 http://127.0.0.1:5000/
+
+![alt text](https://github.com/korshunovdv/cats_and_dogs_recognition/blob/master/static/images/Screenshot%202020-05-13%20at%2011.55.05.png)
+![alt text](https://github.com/korshunovdv/cats_and_dogs_recognition/blob/master/static/images/Screenshot%202020-05-13%20at%2011.55.18.png)
